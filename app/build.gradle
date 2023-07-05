@@ -43,6 +43,7 @@ android {
 
 dependencies {
 
+    implementation 'javax.servlet:jstl:1.2'
     implementation 'org.hibernate:hibernate-core:5.4.32.Final'
     runtimeOnly 'mysql:mysql-connector-java:8.0.26' // Add MySQL connector if using MySQL
     implementation 'androidx.appcompat:appcompat:1.4.1'
