@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Button;
 import android.widget.Toast;
 import android.widget.TextView;
+import android.content.Intent;
 
 
 public class MainActivity extends AppCompatActivity implements LoginView {
@@ -37,7 +38,10 @@ public class MainActivity extends AppCompatActivity implements LoginView {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.onLoginClicked();
+
+                //presenter.onLoginClicked();
+                Intent myIntent = new Intent(MainActivity.this,  RelaxationActivity.class);
+                MainActivity.this.startActivity(myIntent);
             }
         });
 
