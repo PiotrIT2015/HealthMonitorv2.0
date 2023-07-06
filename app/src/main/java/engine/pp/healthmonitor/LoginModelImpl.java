@@ -6,10 +6,10 @@ import org.hibernate.query.Query;
 public class LoginModelImpl implements LoginModel {
     @Override
     public void login(String email, String password, OnLoginFinishedListener listener) {
-        //Session session = HibernateUtil.getSessionFactory().openSession();
+        Session session = HibernateUtil.openSession();
         try {
             // Perform login using Hibernate and MySQL
-            Query<User> query=null; //= session.createQuery("FROM User WHERE email = :email AND password = :password");
+            Query<User> query=session.createQuery("FROM User WHERE email = :email AND password = :password");
             query.setParameter("email", email);
             query.setParameter("password", password);
             User user = query.uniqueResult();
@@ -24,9 +24,9 @@ public class LoginModelImpl implements LoginModel {
         } catch (Exception e) {
             e.printStackTrace();
             listener.onLoginError("An error occurred during login");
-        } /*finally {
+        } finally {
             session.close();
-        }*/
+        }
     }
 }
 
