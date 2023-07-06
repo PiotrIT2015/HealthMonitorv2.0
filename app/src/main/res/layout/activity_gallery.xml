@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GalleryActivity">
-	
+	<!--
 	<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/galleryLayout"
     android:layout_width="match_parent"
@@ -17,17 +17,19 @@
         android:id="@+id/image1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/image1" />
+        android:src="@drawable/image1" 
+		/>
 
     <ImageView
         android:id="@+id/image2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/image2" />
-
-    <!-- Add more ImageView elements for additional images -->
+        android:src="@drawable/image2" 
+		/>
+	
+   
 
 </GridLayout>
-
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,3 +11,6 @@ to individualize content by logging in to the application.
 ## Technologies
 Project is created with:
 * Java version: 17.0.5
+
+![Screenshot](./healthmonitorv2.0.png)
+
