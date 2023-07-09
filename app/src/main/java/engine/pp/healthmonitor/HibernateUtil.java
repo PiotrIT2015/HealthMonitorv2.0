@@ -45,7 +45,7 @@ public class HibernateUtil {
         if (sessionFactory == null) {
             initialize();
         }
-        Session session = null; //sessionFactory.openSession();
+        Session session = sessionFactory.openSession(); //null
         return session;
     }
 
