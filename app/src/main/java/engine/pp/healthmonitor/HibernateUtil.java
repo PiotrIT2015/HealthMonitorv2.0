@@ -41,10 +41,11 @@ public class HibernateUtil {
 
     // Open a session using the SessionFactory and the provided context
     public static Session openSession() {
+
         if (sessionFactory == null) {
             initialize();
         }
-        Session session = null;  //sessionFactory.openSession();
+        Session session = null; //sessionFactory.openSession();
         return session;
     }
 
